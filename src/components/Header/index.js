@@ -33,8 +33,8 @@ const Header = () => (
       >
         {close => (
           <div className="modal-container">
-            <button type="button" testid="closeButton" className="close-button">
-              <IoMdClose onClick={() => close()} className="nav-icon" />
+            <button type="button" testid="closeButton" className="close-button" onClick={() => close()}>
+              <IoMdClose className="nav-icon" />
             </button>
             <ul className="modal-items">
               <Link to="/" className="nav-link" onClick={() => close()}>
